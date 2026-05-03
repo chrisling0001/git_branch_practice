@@ -1,14 +1,14 @@
-def add(x, y):
+def add(x:int=0, y:int=0) -> int:
     return x + y
 
-def add_arr(arr:list) -> int:
-    sum = 0
+def add_array(arr:list) -> int:
+    s = 0
     for a in arr:
-        sum += a
-    return sum
+        s += a
+    return s
 
 if __name__ == "__main__":
     # print(add(5, 42))
     arr = [10, 20, 30]
-    sum = add_arr(arr)
+    sum = add_array(arr)
     print(sum)
